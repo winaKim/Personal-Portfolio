@@ -1,0 +1,421 @@
+/* base rules */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color:#6c757d;
+}
+
+.r-p {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.bg-sec {
+    background:ivory;
+}
+
+#topBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 5%; /* Place the button at the bottom of the page */
+    right: 5%; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(255, 63, 63); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px 25px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 100%; /* Increase font size */
+}
+
+#topBtn:hover {
+background-color: #ff0000; /* Add a dark-grey background on hover */
+}
+
+/* Navigation */
+nav.r-nav {
+    background: #fff !important;
+    padding: 20px 0px;
+    transition: 0.5s all;
+}
+
+nav .navbar-brand {
+    font-size: 30px;
+    color: #000000;
+    transition: 0.5s all;
+}
+
+nav .navbar-nav li a {
+    color:rgba(0, 0, 0, 0.8) !important;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+}
+
+nav .navbar-nav li {
+    margin-left: 15px;
+}
+
+nav.r-nav.stickyadd {
+    background: #fff !important;
+    padding: 15px 0;
+    box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
+    transition: 0.5s all ease-in-out;
+}
+
+nav.stickyadd .navbar-brand {
+    color: #000;;
+    font-size: 40px;
+    transition: 0.5s all;
+}
+
+nav.stickyadd .navbar-nav .nav-link {
+    color: #000 !important;
+}
+
+.navbar .hamburger {
+    color: #000000;
+}
+
+nav.stickyadd .hamburger {
+    color: #000;
+}
+
+/* Header Section */
+
+header {
+    height:100vh;
+    width: 100%;
+    background-image: url('../images/winaKimHome.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+}
+
+.header-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-box {
+    max-width: 700px;
+}
+
+.content-box h4 {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.content-box h1 {
+    font-size: 52px;
+    color: #ffffff;
+}
+
+.content-list li {
+    color: #ffffff;
+}
+
+.content-box a {
+    color:#fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 5px 25px;
+}
+
+.content-box a:hover {
+    color: #000;
+    border: 2px solid #fff;
+    background-color: #fff;
+    transition: 0.5s all;
+}
+
+.content-box p {
+    color: #a5a5a5;
+}
+
+.list-inline {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+.header-content li a {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    font-size: 20px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    line-height: 40px;
+    transition: 0.5s all;
+    text-align: center;
+}
+
+.header-content li a:hover {
+    color: #EE8683;
+}
+
+/* About */
+.about {
+    width: 100%;
+    background-image: linear-gradient(to top right, #61D4CD, #fee0c9);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about .row h1, h4 {
+    color: #000;
+    padding-bottom: 30px;
+}
+
+/* Education Section */
+.education-class .education {
+    border: 2px solid #9eceff;
+    background: transparent;
+}
+
+/* Education Section */
+.education-class {
+    width: 100%;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.education-class h1 {
+    color: #000;
+    padding-bottom: 20px;
+}
+
+.education-class .eduCards {
+    align-content:center;
+    width: 80%;
+    padding-bottom: 20px;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+}
+
+.education-class .education {
+    border: 2px solid #9eceff;
+    background: transparent;
+}
+
+.education-class .vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; /* This ensures the ul takes up the full height of the parent container */
+    align-items: flex-start;
+    padding-left: 30px; /* Remove default list padding */
+}
+
+.education-class .card-title, .card-content-li {
+    list-style-type: none;
+    color: navy;
+}
+
+.education-class .additional {
+    color: purple;
+    list-style-type: none;
+}
+
+
+/* Certification Section */
+.certification-class {
+    width: 100%;
+    background-image: linear-gradient(to top right, #FFFF66, #f6b3ff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.certification-class h1 {
+    color: #000;
+    padding-bottom: 20px;
+}
+
+.certification-class .eduCards {
+    align-content:center;
+    width: 80%;
+    padding-bottom: 20px;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+}
+
+.certification-class .certification {
+    border: 2px solid #9eceff;
+}
+
+.certification-class .vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; /* This ensures the ul takes up the full height of the parent container */
+    align-items: flex-start;
+    padding-left: 30px; /* Remove default list padding */
+}
+
+.certification-class .additional {
+    font-size: 9px;
+    color: purple;
+    list-style-type: none;
+}
+
+
+/* Experience Section */
+.experience-class {
+    width: 100%;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.experience-class h1 {
+    color: #000;
+    padding-bottom: 30px;
+}
+
+.experience-class .expCards {
+    padding-bottom: 20px;
+}
+
+.experience-class .card-title {
+    color: #000000;
+}
+
+.experience-class .card-body {
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-class .experience button {
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+/* Skills Section */
+.skills-class {
+    width: 100%;
+    background-image: linear-gradient(to top right, #9fffaf, #f6b3ff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.skills-class p, h1 {
+    color: #000000;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.skills-class .card, .card-header {
+    background: #F8F9FA !important;
+}
+
+.skills-class .skillCards {
+    padding: 5px;
+}
+
+.card-header {
+    border:none !important;
+}
+
+.skills-class .card-header img{
+    font-size: 50px;
+}
+
+.skill-border{
+    height: 2px;
+    width: 40px;
+    margin: 15px auto;
+    background: #E65F78;
+}
+
+/* Contact Section */
+.conCards .contact {
+    border: 0px;
+}
+
+.contact-content {
+    height: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-content .vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; /* This ensures the ul takes up the full height of the parent container */
+    align-items: flex-start;
+    padding-left: 30px; /* Remove default list padding */
+}
+
+.contact-content .content-box {
+    max-width: 700px;
+}
+
+.contact-content h1 {
+    font-size: 52px;
+    color: #000000;
+}
+
+.contact-content .content-list li {
+    color: #ff5c5c;
+}
+
+.list-inline-item {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+.contact-content .contact li a {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    font-size: 20px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    line-height: 40px;
+    transition: 0.5s all;
+    text-align: center;
+}
+
+.contact-content .contact a:hover {
+    color: #ff5c5c;
+    transition: 0.5s all;
+}
+
+/* Footer Section */
+footer {
+    color: #000000;
+    background-color: #a5a5a5;
+    padding: 50px;
+}
